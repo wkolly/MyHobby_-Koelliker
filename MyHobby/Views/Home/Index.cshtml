@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Golf"]</title>
+    <!-- Custom icon -->
+   
+    <style>
+        .small-image {
+            max-width: 200px; /* Adjust this value to your desired maximum width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 5px; /* Optional: Add some margin between images */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Will Koelliker Golf Website!</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation to the second page -->
+        <a href="@Url.Action("Calculator", "Home")">Sign up for a Lesson!</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Why I love Golf</h2>
+            <p>I grew up playing golf every summer with my grandpa. I always loved getting lemonade in the clubhouse after. This hobby stuck with me and I ended up playing all four years of High School on the golf team.</p>
+            <p>I love playing with friends and exploring new courses out of town. My favorite local golf courses are Hobble Creek, Mountain Dell, and Gladstan. Check out the link to my other page for pricing on a golf lesson from me! </p>
+        </section>
+
+        <section>
+            <h2>My Favorite Golf Pictures</h2>
+            <!-- Insert your images here -->
+            <img src="~/img/dubai.jpg" class="small-image"/>
+            <img src="~/img/tiger.jpg" />
+        </section>
+        <br>
+        <br/>
+        <br/>
+    </main>
+    
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Calculator"]</title>
+    <!-- Custom icon -->
+    <link rel="icon" type="image/png" href="~/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/calculator.js"></script>
+    <style>
+        /* Add your custom CSS styles here */
+        /* Example: body { background-color: #f0f0f0; } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutoring Calculator</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation back to the home page -->
+        <a href="@Url.Action("Index", "Home")">Back to Home</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Enter Hours Needed</h2>
+            <input type="number" id="hoursNeeded" min="0" placeholder="Enter hours" required>
+        </section>
+
+        <section>
+            <h2>Hourly Rate</h2>
+            <input type="text" id="hourlyRate" value="$50" readonly>
+        </section>
+
+        <section>
+            <button id="calculateTotal">Calculate Total</button>
+        </section>
+
+        <section>
+            <h2>Total Cost</h2>
+            <input type="text" id="totalCost" readonly>
+        </section>
+    </main>
+</body>
+</html>
+
